@@ -1,0 +1,98 @@
+/*GUILHERME RIBEIRO
+27/02/2008
+DESCRICAO: TAREFAS IF
+*/
+
+
+//string ... = "..." e auto ... = "..." sao variaveis para nome
+int numero = -731 ;
+float salario_1 = 666 ;
+float reajuste_1 = 0 ;
+float salario_2 = 369 ;
+float reajuste_2 = 0 ;
+float valor_1 = 45678 ;
+float valor_2 = 93157 ;
+float nota_1 = 6.5 ;
+float nota_2 = 5.7 ;
+float nota_3 = 7.3 ;
+float nota_4 = 6.9 ;
+float media = 0 ;
+
+
+void setup()
+  
+{
+  Serial.begin (9600);
+  //exercicio 1
+  Serial.println("*****exercicio 1*****");
+  if (numero <0) 
+  {Serial.println (numero);
+    Serial.println ("NEGATIVO");}
+  else 
+  {Serial.print (numero) ;
+    Serial.println ("POSITIVO");}
+  
+  //exercicio 2
+  
+    //variavel para nome e quando vc colocar, deixa em ""
+   Serial.println("*****exercicio 2*****");
+    String nome1 = "Joano";
+    String cargo1 = "recepcionista";
+    Serial.print("nome: ");
+    Serial.println(nome1);
+    Serial.print("cargo: ");
+    Serial.println(cargo1);
+  if (salario_1 >=1000 & salario_2>500){
+    Serial.println ("salario: ");
+    Serial.println (salario_1);
+  }  
+  else
+    {reajuste_1 = salario_1 * 1.1;
+    Serial.print ("salario reajustado: ");
+    Serial.println (reajuste_1);}
+  //exercicio 3
+   
+  String nome2 = "Joao";
+  String cargo2 = "mecanico";
+  Serial.println("*****exercicio 3*****");
+  Serial.print("nome: ");
+  Serial.print(nome2);
+  Serial.print("cargo: ");
+  Serial.println(cargo2);
+  if (salario_2 >=500) 
+   {Serial.println ("salario: ");
+   Serial.println (salario_2);}  
+  else 
+    {reajuste_2 = salario_2 *1.3;
+    Serial.print("salario reajustado: ");
+    Serial.println(reajuste_2);}
+  //exercicio 4
+  
+   Serial.println("*****exercicio 4*****");
+   Serial.print ("maior valor: ");
+  if(valor_1 >valor_2) 
+  {Serial.println (valor_1);}
+  else if(valor_2 >valor_1) 
+  {Serial.println (valor_2);}
+  else 
+  {Serial.println("ambos sao iguais");}
+  // exercicio 5
+  
+    Serial.println("*****exercicio 5*****");
+    Serial.print("media aritmetica: ");
+    media = (nota_1 + nota_2 + nota_3 + nota_4)/4;
+    Serial.println(media);
+  if(media>7)
+  {Serial.println("APROVADO");}
+  else if(media<7 & media>5)
+  {Serial.println("RECUPERACAO");}
+  else
+   Serial.println("REPROVADO");
+    
+}
+
+void loop()
+  
+{
+  
+}
