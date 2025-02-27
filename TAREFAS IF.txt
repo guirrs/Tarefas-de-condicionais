@@ -43,13 +43,13 @@ void setup()
     Serial.print("cargo: ");
     Serial.println(cargo1);
   if (salario_1 >=1000 & salario_2>500){
-    Serial.println ("salario: ");
-    Serial.println (salario_1);
+    Serial.println("salario: ");
+    Serial.println(salario_1);
   }  
   else
     {reajuste_1 = salario_1 * 1.1;
-    Serial.print ("salario reajustado: ");
-    Serial.println (reajuste_1);}
+    Serial.print("salario reajustado: ");
+    Serial.println(reajuste_1);}
   //exercicio 3
    
   String nome2 = "Joao";
@@ -59,9 +59,9 @@ void setup()
   Serial.print(nome2);
   Serial.print("cargo: ");
   Serial.println(cargo2);
-  if (salario_2 >=500) 
-   {Serial.println ("salario: ");
-   Serial.println (salario_2);}  
+  if (salario_2>=500) 
+   {Serial.println("salario: ");
+   Serial.println(salario_2);}  
   else 
     {reajuste_2 = salario_2 *1.3;
     Serial.print("salario reajustado: ");
@@ -69,18 +69,18 @@ void setup()
   //exercicio 4
   
    Serial.println("*****exercicio 4*****");
-   Serial.print ("maior valor: ");
-  if(valor_1 >valor_2) 
-  {Serial.println (valor_1);}
-  else if(valor_2 >valor_1) 
-  {Serial.println (valor_2);}
+   Serial.print("maior valor: ");
+  if(valor_1>valor_2) 
+  {Serial.println(valor_1);}
+  else if(valor_2>valor_1) 
+  {Serial.println(valor_2);}
   else 
   {Serial.println("ambos sao iguais");}
   // exercicio 5
   
     Serial.println("*****exercicio 5*****");
     Serial.print("media aritmetica: ");
-    media = (nota_1 + nota_2 + nota_3 + nota_4)/4;
+    media = (nota_1+nota_2+nota_3+nota_4)/4;
     Serial.println(media);
   if(media>7)
   {Serial.println("APROVADO");}
